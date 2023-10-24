@@ -3,7 +3,7 @@ import Badge from 'react-bootstrap/Badge';
 
 const Tags = ({backgroundColor, textoBadge }) => {
   return (
-    <Badge>Hola</Badge>
+    <Badge bg={backgroundColor}>{textoBadge}</Badge>
   )
 }
 

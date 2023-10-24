@@ -2,11 +2,9 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -65,5 +63,86 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.my-card {
+  width: 18rem;
+  margin: 1rem;
+  border: 1px solid #090909;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.badge {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.card-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.footer {
+  text-align: center;
+  background-color: #f8f9fa;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .header h1 {
+    font-size: 20px;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+
+  .my-card {
+    width: 100%;
   }
 }
